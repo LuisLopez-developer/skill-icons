@@ -4,7 +4,7 @@ import { svgGenerator } from '../src/utils/svgGenerator';
 import { mapShortNamesToFullNames } from '../src/constants/svgShortName';
 
 // Cargar íconos
-const icons = loadIcons('./icons');
+const icons = loadIcons();
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   const { i, t, perline } = req.query;
